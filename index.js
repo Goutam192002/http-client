@@ -1,17 +1,7 @@
 "use strict";
 
-function Http() {
-}
-
-Http.prototype = {
-    get: () => {},
-    post: () => {},
-    put: () => {},
-    patch: () => {},
-    delete: () => {},
-    options: () => {}
-}
+var Client = require('./lib/client');
 
 module.exports = (function () {
-    return new Http();
+    return new Client();
 }());
