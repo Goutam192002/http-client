@@ -15,5 +15,21 @@ describe('GET http method', () => {
     it('should get html response', async function () {
         var result = await http.get('http://localhost:3000/');
         expect(result.data);
-    })
+    });
+
+    it('should get response with basic authenticaton', async function () {
+        var result = await http.get('http://localhost:3000/protected-basic-auth/hi', {
+            auth: 'user:password'
+        });
+        expect(result.data).to.equal('hi');
+    });
+
+    it('should get response with auth headers', async function () {
+        var result = await http.get('http://localhost:3000/protected-auth/hi', {
+            headers: {
+                authorization: `Bearer someverylongtoken`
+            }
+        });
+        expect(result.data).to.equal('hi');
+    });
 });
