@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: methods.js</title>
+    <title>JSDoc: Source: response.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: methods.js</h1>
+    <h1 class="page-title">Source: response.js</h1>
 
     
 
@@ -27,16 +27,22 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * List of supported methods
- * @type {{DELETE: string, POST: string, GET: string, PUT: string, PATCH: string}}
+ * Response
+ * @param {number} statusCode - status code returned by server.
+ * @param {string} statusMessage - status message returned by server.
+ * @param {object} headers - headers returned by server.
+ * @param {object|string} data - response returned by server.
+ * @constructor
  */
-module.exports = {
-    GET: "GET",
-    POST: "POST",
-    PUT: "PUT",
-    PATCH: "PATCH",
-    DELETE: "DELETE"
-}</code></pre>
+function Response(statusCode, statusMessage, headers, data) {
+    this.statusCode = statusCode;
+    this.statusMessage = statusMessage;
+    this.headers = headers;
+    this.data = data;
+}
+
+
+module.exports = Response;</code></pre>
         </article>
     </section>
 
