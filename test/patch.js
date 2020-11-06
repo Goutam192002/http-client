@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var http = require('../index');
 
-describe('PATCH http method', () => {
+describe('PATCH http method', function () {
     it('should make a normal PATCH request', async function () {
         var result = await http.patch('http://localhost:3000/patch', {
             contentType: 'application/json',
