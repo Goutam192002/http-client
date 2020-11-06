@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
+    <title>JSDoc: Class: RequestOptions</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Global</h1>
+    <h1 class="page-title">Class: RequestOptions</h1>
 
     
 
@@ -28,7 +28,7 @@
 
 <header>
     
-        <h2></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>RequestOptions<span class="signature">(data, auth, headers, contentType)</span><span class="type-signature"></span></h2>
         
     
 </header>
@@ -38,73 +38,10 @@
     
         
 
-        
-
-
-<dl class="details">
-
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="Abstractmethodformakingrequestusingnodehttp."><span class="type-signature"></span>Abstract method for making request using node http.<span class="signature">(method, url, extra)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Response.html">Response</a>>}</span></h4>
+    <h4 class="name" id="RequestOptions"><span class="type-signature"></span>new RequestOptions<span class="signature">(data, auth, headers, contentType)</span><span class="type-signature"></span></h4>
     
 
     
@@ -144,7 +81,33 @@
 
         <tr>
             
-                <td class="name"><code>method</code></td>
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+|
+
+<span class="param-type">buffer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Data to be sent in the body of the request</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>auth</code></td>
             
 
             <td class="type">
@@ -160,14 +123,37 @@
 
             
 
-            <td class="description last">Could be GET, POST, PUT, PATCH, DELETE.</td>
+            <td class="description last">username:password string for basic authentication</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>headers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Headers to be sent to server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>contentType</code></td>
             
 
             <td class="type">
@@ -183,30 +169,7 @@
 
             
 
-            <td class="description last">URL pointing to endpoint.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>extra</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Object containing extra properties.</td>
+            <td class="description last">Content Type of data</td>
         </tr>
 
     
@@ -247,7 +210,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="method.js.html">method.js</a>, <a href="method.js.html#line5">line 5</a>
+        <a href="requestOptions.js.html">requestOptions.js</a>, <a href="requestOptions.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -272,30 +235,28 @@
 
 
 
-<h5>Returns:</h5>
-
-        
 
 
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;<a href="Response.html">Response</a>></span>
 
 
-    </dd>
-</dl>
+
+    
+    </div>
 
     
 
+    
 
+    
 
+    
 
+    
 
-        
+    
+
+    
+
     
 
     

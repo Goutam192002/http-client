@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: methods.js</title>
+    <title>JSDoc: Source: requestOptions.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: methods.js</h1>
+    <h1 class="page-title">Source: requestOptions.js</h1>
 
     
 
@@ -27,16 +27,23 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * List of supported methods
- * @type {{DELETE: string, POST: string, GET: string, PUT: string, PATCH: string}}
+ *
+ * @param {object|buffer} data - Data to be sent in the body of the request
+ * @param {string} auth - username:password string for basic authentication
+ * @param {object} headers - Headers to be sent to server
+ * @param {string} contentType - Content Type of data
+ * @constructor
  */
-module.exports = {
-    GET: "GET",
-    POST: "POST",
-    PUT: "PUT",
-    PATCH: "PATCH",
-    DELETE: "DELETE"
-}</code></pre>
+function RequestOptions({ data, auth, headers, contentType }) {
+    this.auth = auth || '';
+    this.data = data ? JSON.stringify(data) : '';
+    this.headers = headers || {};
+    this.headers['Content-Type'] =  contentType || 'application/json';
+    this.headers['Content-Length'] = Buffer.byteLength(this.data);
+    return this;
+}
+
+module.exports = RequestOptions;</code></pre>
         </article>
     </section>
 
