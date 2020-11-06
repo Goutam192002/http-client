@@ -1,5 +1,5 @@
-const expect = require('chai').expect;
-const http = require('../index');
+var expect = require('chai').expect;
+var http = require('../index');
 
 describe('PUT http method', () => {
     it('should make a normal put request with correct content type', async function () {
