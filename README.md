@@ -1,4 +1,4 @@
-YAHP (Yet another HTTP client package) [![Build Status](https://travis-ci.org/Goutam192002/http-client.svg?branch=main)](https://travis-ci.org/Goutam192002/http-client) [![Coverage Status](https://coveralls.io/repos/github/Goutam192002/yahp/badge.svg?branch=main)](https://coveralls.io/github/Goutam192002/yahp?branch=main)
+YAHP (Yet another HTTP client package) [![Build Status](https://travis-ci.org/Goutam192002/yahp.svg?branch=main)](https://travis-ci.org/Goutam192002/yahp) [![Coverage Status](https://coveralls.io/repos/github/Goutam192002/yahp/badge.svg?branch=main)](https://coveralls.io/github/Goutam192002/yahp?branch=main)
 ===========
 
 Yet another node.js http client library that solves all your needs.
