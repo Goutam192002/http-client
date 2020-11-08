@@ -1,6 +1,11 @@
-# http-client
+http-client
+===========
+
 Yet another node.js http client library that solves all your needs.
 
+## Installation
+    `npm install http-client`
+    
 ## How to make requests?
 
 GET request.
