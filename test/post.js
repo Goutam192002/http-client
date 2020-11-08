@@ -1,8 +1,15 @@
-const expect = require('chai').expect;
-const http = require('../index');
-const fs = require('fs');
+var expect = require('chai').expect;
+var http = require('../index');
+var fs = require('fs');
+var nock = require('nock');
 
 describe('POST http method', function () {
+    before(function () {
+        nock('http://localhost:3000').post('/post', {
+            name: 'Goutam'
+        }).reply(200, 'Goutam');
+    });
+
     it('should make a normal post request with correct content type', async function () {
         var result = await http.post('http://localhost:3000/post', {
             contentType: 'application/json',
@@ -11,14 +18,5 @@ describe('POST http method', function () {
             }
         });
         expect(result.data).to.equal('Goutam');
-    });
-
-    it('should make a POST request with file data', async function () {
-        var result = await http.post('http://localhost:3000/post', {
-            data: fs.readFileSync('./file.txt', {
-                encoding: 'utf8'
-            })
-        });
-        expect(result.data);
     });
 });
