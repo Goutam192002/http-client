@@ -4,7 +4,7 @@ YAHP (Yet another HTTP client package)
 Yet another node.js http client library that solves all your needs.
 
 ## Installation
-    `npm install yahp`
+    npm install yahp
     
 ## How to make requests?
 
