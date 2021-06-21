@@ -1,6 +1,6 @@
 {
   "name": "yahp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Yet another http client library which simplifies the way you make http requests",
   "main": "index.js",
   "scripts": {
