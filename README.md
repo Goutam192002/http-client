@@ -44,5 +44,3 @@ var response = client.get('http://localhost:3000/protected', {
     }
 });
 ```
-
-Made with 💓 in 🇮🇳.
